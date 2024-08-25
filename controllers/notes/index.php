@@ -1,9 +1,9 @@
 <?php
 use Core\Database;
+use Core\App;
 
-$config = require base_path("config.php");
+$db = App::resolve(Database::class);
 
-$db = new Database($config['database'], 'root', 'root');
 
 $notes = $db->query('select * from notes where user_id = 1')->get();
 
