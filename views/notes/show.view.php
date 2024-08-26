@@ -11,6 +11,15 @@ require base_path("views/partials/banner.php");
 
         <p><?php echo htmlspecialchars($note['body']); ?></p>
 
+        <form method="POST" class="mt-6">
+            <input type="hidden" name="id" value="<?php echo $note['id']; ?>">
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="submit"
+                    class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                Delete Note
+            </button>
+        </form>
+
     </div>
 </main>
 
