@@ -74,8 +74,8 @@
                             </div>
                         </div>
                     <?php else: ?>
-                        <a href="/register"
-                           class="<?php echo isUrl('/register') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?> rounded-md ml-3 px-2 py-2 text-sm font-medium">Register</a>
+                        <a href="/register" class="<?php echo isUrl('/register') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?> rounded-md ml-3 px-2 py-2 text-sm font-medium">Register</a>
+                        <a href="/login" class="<?php echo isUrl('/login') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?> rounded-md ml-3 px-2 py-2 text-sm font-medium">Log In</a>
                     <?php endif; ?>
                 </div>
             </div>
